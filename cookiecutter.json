@@ -1,0 +1,9 @@
+{
+    "full_name": "Jorge Langa",
+    "email": "jorge.langa.arranz@gmail.com",
+    "username": "jlanga",
+    "github_username": "jlanga",
+    "project_name": "smsk",
+    "repo_name": "smsk",
+    "github_url": "git@github.com:{{cookiecutter.username}}/{{cookiecutter.repo_name}}.git"
+}
