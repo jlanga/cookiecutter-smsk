@@ -29,3 +29,6 @@ script:
   - cookiecutter . --no-input
   - pushd smsk
   - snakemake --use-conda -j
+
+after_failure:
+    - find results reports -name "*.log" -printf "%T@ %Tc %p\n" | sort -n | cut -f 8 -d " " | xargs tail -n +1 -- *.txt
