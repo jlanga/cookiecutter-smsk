@@ -18,12 +18,9 @@ before_install:
 
 
 install:
-  - export PATH="/home/travis/miniconda3/bin:$PATH"
-  - echo $PATH
-  - bash src/install/conda_env.sh
 
 script:
-  - export PATH="/home/travis/miniconda3/bin:$PATH"
+  - export PATH="$HOME/miniconda/bin:$PATH"
   - echo $PATH
   - source activate smsk
-  - snakemake -j
+  - snakemake --use-conda -j
