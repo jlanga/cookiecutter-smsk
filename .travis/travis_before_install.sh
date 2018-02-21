@@ -3,7 +3,7 @@
 # Install miniconda
 ## http://conda-test.pydata.org/docs/travis.html
 
-if [[ -d "$HOME/miniconda" ]]; then
+if [[ -d "$HOME/miniconda/bin" ]]; then
     echo "miniconda3 already installed."
 else
     # We do this conditionally because it saves us some downloading if the
