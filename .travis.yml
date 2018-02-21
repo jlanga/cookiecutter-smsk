@@ -11,7 +11,7 @@ addons:
 
 cache:
     directories:
-        - $HOME/miniconda3/
+        - $HOME/miniconda/
 
 python:
   - "3.5"
