@@ -1,5 +1,7 @@
 # cookiecutter-smsk
 
+[![Build Status](https://travis-ci.org/jlanga/cookiecutter-smsk.svg?branch=master)](https://travis-ci.org/jlanga/cookiecutter-smsk)
+
 cookiecutter boilerplate for smsk
 
 # What's this?
