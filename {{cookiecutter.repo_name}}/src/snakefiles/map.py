@@ -13,7 +13,7 @@ rule map_bwa_index:
     benchmark:
         MAP + "bwa_index.time"
     conda:
-        "../../envs/map.yml"
+        "map.yml"
     shell:
         "bwa index "
             "{input} "
@@ -40,7 +40,7 @@ rule map_bwa_sample:
     threads:
         MAX_THREADS
     conda:
-        "../../envs/map.yml"
+        "map.yml"
     shell:
         "(bwa mem "
             "-R '{params.rg}' "
@@ -65,7 +65,7 @@ rule map_sort_sample:
     benchmark:
         MAP + "sort_{sample}.time"
     conda:
-        "../../envs/map.yml"
+        "map.yml"
     shell:
         "samtools sort "
             "-T $(mktemp --dry-run) "
@@ -85,7 +85,7 @@ rule map_index_sample:
     benchmark:
         MAP + "index_{sample}.time"
     conda:
-        "../../envs/map.yml"
+        "map.yml"
     shell:
         "samtools index {input} > {log} 2>&1"
 

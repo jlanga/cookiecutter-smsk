@@ -10,7 +10,7 @@ rule call_bcftools:
             sample=config["samples"]
         )
     conda:
-        "../../envs/call.yml"
+        "call.yml"
     output:
         protected(CALL + "all.vcf")
     log:
